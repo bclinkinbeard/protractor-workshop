@@ -2,9 +2,10 @@
 var browsers = require('./browsers');
 
 var config = {
-  specs: [
-    './e2e/**/*.spec.js'
-  ],
+  suites: {
+    basics: './e2e/index.spec.js',
+    signin: './e2e/signin.spec.js'
+  },
 
   baseUrl: 'http://localhost:3000',
 

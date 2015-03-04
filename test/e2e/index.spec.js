@@ -1,4 +1,5 @@
 var IndexPage = require('./IndexPage');
+var capture = require('../capture');
 
 describe('sign-in-form', function () {
 
@@ -6,6 +7,10 @@ describe('sign-in-form', function () {
 
   beforeEach(function () {
     page.get();
+  });
+
+  afterEach(function () {
+    capture.takeScreenshot(jasmine.getEnv().currentSpec);
   });
 
   describe('basics', function () {
