@@ -4,6 +4,7 @@ function IndexPage () {
   this.passwordInput = element(by.model('user.password'));
   this.submitBtn = element(by.buttonText('Sign in'));
   this.forgotLink = element(by.linkText('Forgot your password?'));
+  this.errorContainer = element(by.css('.has-error'));
 
   this.get = function () {
     browser.get('/');

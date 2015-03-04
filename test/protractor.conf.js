@@ -1,4 +1,6 @@
 
+var browsers = require('./browsers');
+
 var config = {
   specs: [
     './e2e/**/*.spec.js'
@@ -6,8 +8,13 @@ var config = {
 
   baseUrl: 'http://localhost:3000',
 
-  browserName: 'chrome',
+  multiCapabilities: [
+    browsers.chrome,
+    browsers.firefox
+  ],
   directConnect: true
 };
 
 exports.config = config;
+
+
