@@ -14,5 +14,15 @@ describe('sign-in-form', function () {
       var forgotLink = element(by.linkText('Forgot your password?'));
       expect(forgotLink.isPresent()).toBe(true);
     });
+
+    it('should have the expected submit button', function () {
+      var submitBtn = element(by.buttonText('Sign in'));
+      expect(submitBtn.isPresent()).toBe(true);
+    });
+
+    it('should go to /forgot when clicking the forgot your password link', function () {
+      element(by.linkText('Forgot your password?')).click();
+      expect(browser.getLocationAbsUrl()).toBe('/forgot');
+    });
   });
 });
