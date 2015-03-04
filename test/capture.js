@@ -1,3 +1,4 @@
+
 var fs = require('fs');
 
 function capture (spec) {

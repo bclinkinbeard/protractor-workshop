@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "serve",
-    "test": "protractor test/protractor.conf.js",
-    "test-basics": "protractor test/protractor.conf.js --suite=basics",
-    "test-signin": "protractor test/protractor.conf.js --suite=signin"
+    "test": "protractor test/protractor.conf.js"
   },
   "keywords": [],
   "author": "Ben Clinkinbeard <ben.clinkinbeard@gmail.com> (http://benclinkinbeard.com/)",

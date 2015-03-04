@@ -9,10 +9,6 @@ describe('sign-in-form', function () {
     page.get();
   });
 
-  afterEach(function () {
-    capture.takeScreenshot(jasmine.getEnv().currentSpec);
-  });
-
   describe('basics', function () {
     it('should display the correct page title', function () {
       expect(browser.getTitle()).toBe('Sign In');
